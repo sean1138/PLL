@@ -1,128 +1,240 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Utangard Tree of Services</title>
-        <link rel="stylesheet" href="utangard-body.css">
-    </head>
-    <body>
- <style>
-body {
-  background-image: url('background.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-</style>
-<h2 style="text-align: center;"><span style="color: #cc99ff;">Utangard Simple HTTP Landing Page:</span></h2>
-<table style="height: 720px; border-color: #ffffff; margin-left: auto; margin-right: auto;" border="4" width="1280">
-<tbody>
-<tr>
-<td style="width: 145.533px;">
-<h3 style="text-align: center;"><span style="color: #cc99ff;">Service:</span></h3>
-</td>
-<td style="width: 132.033px;">
-<h3 style="text-align: center;"><span style="color: #cc99ff;">Protocol:</span></h3>
-</td>
-<td style="width: 229.467px;">
-<h3 style="text-align: center;"><span style="color: #cc99ff;">TCP, UDP, Other:</span></h3>
-</td>
-<td style="width: 64.9667px;">
-<h3 style="text-align: center;"><span style="color: #cc99ff;">URL:</span></h3>
-</td>
-</tr>
-<tr>
-<td style="text-align: center; width: 145.533px;"><span style="color: #99ccff;">Archives</span></td>
-<td style="text-align: center; width: 132.033px;"><span style="color: #99ccff;">HTTPS</span></td>
-<td style="text-align: center; width: 229.467px;"><span style="color: #99ccff;">TCP</span></td>
-<td style="text-align: center; width: 64.9667px;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://archives.utangard.net/">https://archives.utangard.net/</a></span></td>
-</tr>
-<tr>
-<td style="text-align: center; width: 145.533px;"><span style="color: #99ccff;">Cloud Server</span></td>
-<td style="text-align: center; width: 132.033px;"><span style="color: #99ccff;">HTTPS</span></td>
-<td style="text-align: center; width: 229.467px;"><span style="color: #99ccff;">TCP</span></td>
-<td style="text-align: center; width: 64.9667px;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://cloud.utangard.net/">https://cloud.utangard.net/</a></span></td>
-</tr>
-<tr>
-<td style="text-align: center; width: 145.533px;"><span style="color: #99ccff;">Domain Name Services</span></td>
-<td style="text-align: center; width: 132.033px;"><span style="color: #99ccff;">HTTPS | TLS</span></td>
-<td style="text-align: center; width: 229.467px;"><span style="color: #99ccff;">TCP</span></td>
-<td style="text-align: center; width: 64.9667px;"><span style="color: #0000ff;"><span style="color: #99ccff;">DoH:</span> <a style="color: #0000ff;" href="https://dns.utangard.net/dns-query/">https://dns.utangard.net/dns-query/</a> </span><br /><span style="color: #99ccff;">DoT: utangard.net:853</span></td>
-</tr>
-<tr>
-<td style="text-align: center; width: 145.533px;"><span style="color: #99ccff;">E2E Encrypted Pastebin</span></td>
-<td style="text-align: center; width: 132.033px;"><span style="color: #99ccff;">HTTPS</span></td>
-<td style="text-align: center; width: 229.467px;"><span style="color: #99ccff;">TCP</span></td>
-<td style="text-align: center; width: 64.9667px;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://0bin.utangard.net/">https://0bin.utangard.net/</a></span></td>
-</tr>
-<tr>
-<td style="text-align: center; width: 145.533px;"><span style="color: #99ccff;">Firefly</span></td>
-<td style="text-align: center; width: 132.033px;"><span style="color: #99ccff;">HTTPS</span></td>
-<td style="text-align: center; width: 229.467px;"><span style="color: #99ccff;">TCP</span></td>
-<td style="text-align: center; width: 64.9667px;"><span style="color: #99ccff;">(Not Yet Deployed)</span></td>
-</tr>
-<tr>
-<td style="text-align: center; width: 145.533px;"><span style="color: #99ccff;">Git Service</span></td>
-<td style="text-align: center; width: 132.033px;"><span style="color: #99ccff;">HTTPS | TLS | SSH</span></td>
-<td style="text-align: center; width: 229.467px;"><span style="color: #99ccff;">TCP</span><br /><span style="color: #99ccff;">UDP if SSH</span></td>
-<td style="text-align: center; width: 64.9667px;"><span style="color: #99ccff;">(Not Yet Deployed)</span></td>
-</tr>
-<tr>
-<td style="text-align: center; width: 145.533px;"><span style="color: #99ccff;">Landing Page</span></td>
-<td style="text-align: center; width: 132.033px;"><span style="color: #99ccff;">HTTPS</span></td>
-<td style="text-align: center; width: 229.467px;"><span style="color: #99ccff;">TCP</span></td>
-<td style="text-align: center; width: 64.9667px;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://bi-frost.utangard.net/">https://utangard.net/<br />https://bi-frost.utangard.net/</a> </span><br /><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://services.utangard.net/">https://services.utangard.net/</a></span></td>
-</tr>
-<tr>
-<td style="text-align: center; width: 145.533px;"><span style="color: #99ccff;">Media Services</span></td>
-<td style="text-align: center; width: 132.033px;"><span style="color: #99ccff;">HTTPS | TLS</span></td>
-<td style="text-align: center; width: 229.467px;"><span style="color: #99ccff;">TCP</span><br /><span style="color: #99ccff;">UDP</span></td>
-<td style="text-align: center; width: 64.9667px;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://jelly.utangard.net/">https://jelly.utangard.net/</a></span></td>
-</tr>
-<tr>
-<td style="text-align: center; width: 145.533px;"><span style="color: #99ccff;">Network Time Services</span></td>
-<td style="text-align: center; width: 132.033px;"><span style="color: #99ccff;">HTTPS | NTP</span></td>
-<td style="text-align: center; width: 229.467px;"><span style="color: #99ccff;">UDP</span></td>
-<td style="text-align: center; width: 64.9667px;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://time.utangard.net/">https://time.utangard.net/</a> </span><br /><span style="color: #99ccff;">(See for NTP information)</span></td>
-</tr>
-<tr>
-<td style="text-align: center; width: 145.533px;"><span style="color: #99ccff;">Password Manager</span></td>
-<td style="text-align: center; width: 132.033px;"><span style="color: #99ccff;">HTTPS</span></td>
-<td style="text-align: center; width: 229.467px;"><span style="color: #99ccff;">TCP</span><br /><span style="color: #99ccff;">UDP (Push Service)</span></td>
-<td style="text-align: center; width: 64.9667px;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://bitwarden.utangard.net/">https://bitwarden.utangard.net/</a></span></td>
-</tr>
-<tr>
-<td style="text-align: center; width: 145.533px;"><span style="color: #99ccff;">Pi-Hole DNS Control</span></td>
-<td style="text-align: center; width: 132.033px;"><span style="color: #99ccff;">HTTPS</span></td>
-<td style="text-align: center; width: 229.467px;"><span style="color: #99ccff;">TCP</span></td>
-<td style="text-align: center; width: 64.9667px;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://pi-hole.utangard.net/">https://pi-hole.utangard.net/</a></span></td>
-</tr>
-<tr>
-<td style="text-align: center; width: 145.533px;"><span style="color: #99ccff;">Privacy Policy</span></td>
-<td style="text-align: center; width: 132.033px;"><span style="color: #99ccff;">HTTPS</span></td>
-<td style="text-align: center; width: 229.467px;"><span style="color: #99ccff;">TCP</span></td>
-<td style="text-align: center; width: 64.9667px;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://services.utangard.net/privacyLegal.html">https://services.utangard.net/privacyLegal.html/</a></span></td>
-</tr>
-<tr>
-<td style="text-align: center; width: 145.533px;"><span style="color: #99ccff;">Hardened SSH</span></td>
-<td style="text-align: center; width: 132.033px;"><span style="color: #99ccff;">TLS</span></td>
-<td style="text-align: center; width: 229.467px;"><span style="color: #99ccff;">UDP</span></td>
-<td style="text-align: center; width: 64.9667px;"><span style="color: #99ccff;"><a style="color: #99ccff;" href="mailto:user@utangard.net">user@utangard.net</a> -p (various)</span></td>
-</tr>
-<tr>
-<td style="text-align: center; width: 145.533px;"><span style="color: #99ccff;">Vouch 3rd Party Authentication + 2FA</span></td>
-<td style="text-align: center; width: 132.033px;"><span style="color: #99ccff;">HTTPS</span></td>
-<td style="text-align: center; width: 229.467px;"><span style="color: #99ccff;">TCP</span></td>
-<td style="text-align: center; width: 64.9667px;"><span style="color: #99ccff;">(Applied to critical infrastructure + YUBIKEY 2FA)</span></td>
-</tr>
-</tbody>
-</table>
-<footer>
-<h2 style="text-align: center;"><span style="color: #cc99ff;">Purpose:</span></h2>
-<p style="text-align: center;"><span style="color: #99ccff;">Why do we need more than this for a simple index directory landing page?</span></p>
-<hr />
-<h2 style="text-align: center;"><span style="color: #cc99ff;">Author: Eric</span></h2>
-<p style="text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="mailto:uutangard@outlook.com">uutangard@outlook.com Address to the Server Administrator or Eric</a></span></p>
-<p style="text-align: center;"><span style="color: #0000ff;"><a style="color: #0000ff;" href="https://services.utangard.net/privacyLegal.html">Privacy Policy and Legal Statement Pursuant to All Services</a></span></p>
-</footer>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Utangard Tree of Services</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="utangard-body.css">
+</head>
+<body>
+	<style>
+	body {
+		background-image: url('https://services.utangard.net/background.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		color: #cc99ff;
+		line-height:1.333
+	}
+	p, h2, h3 {
+		text-align: center;
+	}
+	h3 {
+	}
+	a, a:link {
+		color: #00f;
+	}
+	.color1, .color1:link {
+		color: #99ccff;
+	}
+	/** rules to make TABLEs consistent across all browsers **/
+	TABLE {
+		border-collapse:collapse;
+		margin:1em auto;
+		width:100%;
+		max-width:96%;
+		table-layout: fixed;
+		border:4px solid white;
+	}
+	TABLE CAPTION {
+		border: 1px solid #FFF;
+		border-bottom:none;
+		font-weight:bold;
+	}
+	TABLE TD, TABLE TH {
+		text-align:center;
+	}
+	TABLE TD, TABLE TH, TABLE CAPTION {
+		padding:.5rem;
+	}
+	/** end table rules **/
+	td a {
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+	}
+	</style>
+	<h2>Utangard Simple HTTP Landing Page:</h2>
+	<table style="height: 720px;  margin-left: auto; margin-right: auto;" border="4" width="1280">
+		<tbody>
+			<tr>
+				<td style="width: 145.533px;">
+					<h3><span>Service:</span>
+					</h3>
+				</td>
+				<td style="width: 132.033px;">
+					<h3><span>Protocol:</span>
+					</h3>
+				</td>
+				<td style="width: 229.467px;">
+					<h3><span>TCP, UDP, Other:</span>
+					</h3>
+				</td>
+				<td style="width: 64.9667px;">
+					<h3><span>URL:</span>
+					</h3>
+				</td>
+			</tr>
+			<tr>
+				<td><span>Archives</span>
+				</td>
+				<td><span>HTTPS</span>
+				</td>
+				<td><span>TCP</span>
+				</td>
+				<td><span><a href="https://archives.utangard.net/">https://archives.utangard.net/</a></span>
+				</td>
+			</tr>
+			<tr>
+				<td><span>Cloud Server</span>
+				</td>
+				<td><span>HTTPS</span>
+				</td>
+				<td><span>TCP</span>
+				</td>
+				<td><span><a href="https://cloud.utangard.net/">https://cloud.utangard.net/</a></span>
+				</td>
+			</tr>
+			<tr>
+				<td><span>Domain Name Services</span>
+				</td>
+				<td><span>HTTPS | TLS</span>
+				</td>
+				<td><span>TCP</span>
+				</td>
+				<td><span><span>DoH:</span>  <a href="https://dns.utangard.net/dns-query/">https://dns.utangard.net/dns-query/</a>
+					</span>
+					<br /><span>DoT: utangard.net:853</span>
+				</td>
+			</tr>
+			<tr>
+				<td><span>E2E Encrypted Pastebin</span>
+				</td>
+				<td><span>HTTPS</span>
+				</td>
+				<td><span>TCP</span>
+				</td>
+				<td><span><a href="https://0bin.utangard.net/">https://0bin.utangard.net/</a></span>
+				</td>
+			</tr>
+			<tr>
+				<td><span>Firefly</span>
+				</td>
+				<td><span>HTTPS</span>
+				</td>
+				<td><span>TCP</span>
+				</td>
+				<td><span>(Not Yet Deployed)</span>
+				</td>
+			</tr>
+			<tr>
+				<td><span>Git Service</span>
+				</td>
+				<td><span>HTTPS | TLS | SSH</span>
+				</td>
+				<td><span>TCP</span>
+					<br /><span>UDP if SSH</span>
+				</td>
+				<td><span>(Not Yet Deployed)</span>
+				</td>
+			</tr>
+			<tr>
+				<td><span>Landing Page</span>
+				</td>
+				<td><span>HTTPS</span>
+				</td>
+				<td><span>TCP</span>
+				</td>
+				<td><span><a href="https://bi-frost.utangard.net/">https://utangard.net/<br />https://bi-frost.utangard.net/</a> </span>
+					<br /><span><a href="https://services.utangard.net/">https://services.utangard.net/</a></span>
+				</td>
+			</tr>
+			<tr>
+				<td><span>Media Services</span>
+				</td>
+				<td><span>HTTPS | TLS</span>
+				</td>
+				<td><span>TCP</span>
+					<br /><span>UDP</span>
+				</td>
+				<td><span><a href="https://jelly.utangard.net/">https://jelly.utangard.net/</a></span>
+				</td>
+			</tr>
+			<tr>
+				<td><span>Network Time Services</span>
+				</td>
+				<td><span>HTTPS | NTP</span>
+				</td>
+				<td><span>UDP</span>
+				</td>
+				<td><span><a href="https://time.utangard.net/">https://time.utangard.net/</a> </span>
+					<br /><span>(See for NTP information)</span>
+				</td>
+			</tr>
+			<tr>
+				<td><span>Password Manager</span>
+				</td>
+				<td><span>HTTPS</span>
+				</td>
+				<td><span>TCP</span>
+					<br /><span>UDP (Push Service)</span>
+				</td>
+				<td><span><a href="https://bitwarden.utangard.net/">https://bitwarden.utangard.net/</a></span>
+				</td>
+			</tr>
+			<tr>
+				<td><span>Pi-Hole DNS Control</span>
+				</td>
+				<td><span>HTTPS</span>
+				</td>
+				<td><span>TCP</span>
+				</td>
+				<td><span><a href="https://pi-hole.utangard.net/">https://pi-hole.utangard.net/</a></span>
+				</td>
+			</tr>
+			<tr>
+				<td><span>Privacy Policy</span>
+				</td>
+				<td><span>HTTPS</span>
+				</td>
+				<td><span>TCP</span>
+				</td>
+				<td><span><a href="https://services.utangard.net/privacyLegal.html">https://services.utangard.net/privacyLegal.html/</a></span>
+				</td>
+			</tr>
+			<tr>
+				<td><span>Hardened SSH</span>
+				</td>
+				<td><span>TLS</span>
+				</td>
+				<td><span>UDP</span>
+				</td>
+				<td><span><a class="color1" href="mailto:user@utangard.net">user@utangard.net</a> -p (various)</span>
+				</td>
+			</tr>
+			<tr>
+				<td><span>Vouch 3rd Party Authentication + 2FA</span>
+				</td>
+				<td><span>HTTPS</span>
+				</td>
+				<td><span>TCP</span>
+				</td>
+				<td><span>(Applied to critical infrastructure + YUBIKEY 2FA)</span>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<footer>
+		<h2><span>Purpose:</span>
+		</h2>
+		<p><span>Why do we need more than this for a simple index directory landing page?</span>
+		</p>
+		<hr />
+		<h2><span>Author: Eric</span>
+		</h2>
+		<p><span><a href="mailto:uutangard@outlook.com">uutangard@outlook.com Address to the Server Administrator or Eric</a></span>
+		</p>
+		<p><span><a href="https://services.utangard.net/privacyLegal.html">Privacy Policy and Legal Statement Pursuant to All Services</a></span>
+		</p>
+	</footer>
 </html>
-
